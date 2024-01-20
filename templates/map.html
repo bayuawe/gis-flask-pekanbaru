@@ -1,15 +1,439 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffee Shops in Pekanbaru</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-  </head>
-  <body>
-    <div id="map"></div>
-
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5b675da7fe3d3d684531ac25f623c0dc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5b675da7fe3d3d684531ac25f623c0dc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5b675da7fe3d3d684531ac25f623c0dc = L.map(
+                "map_5b675da7fe3d3d684531ac25f623c0dc",
+                {
+                    center: [0.5394, 101.4431],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_68eb3fb246eabdca1523e9a98698bf9a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_68eb3fb246eabdca1523e9a98698bf9a.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_0d9a833d92d21d39487c6840bd3c6826_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0d9a833d92d21d39487c6840bd3c6826 = L.geoJson(null, {
+                onEachFeature: geo_json_0d9a833d92d21d39487c6840bd3c6826_onEachFeature,
+            
+        });
+
+        function geo_json_0d9a833d92d21d39487c6840bd3c6826_add (data) {
+            geo_json_0d9a833d92d21d39487c6840bd3c6826
+                .addData(data);
+        }
+            geo_json_0d9a833d92d21d39487c6840bd3c6826_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "binawidya"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_0d9a833d92d21d39487c6840bd3c6826.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_628a30efbb1d339c14d78c7ea65175e4_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_628a30efbb1d339c14d78c7ea65175e4 = L.geoJson(null, {
+                onEachFeature: geo_json_628a30efbb1d339c14d78c7ea65175e4_onEachFeature,
+            
+        });
+
+        function geo_json_628a30efbb1d339c14d78c7ea65175e4_add (data) {
+            geo_json_628a30efbb1d339c14d78c7ea65175e4
+                .addData(data);
+        }
+            geo_json_628a30efbb1d339c14d78c7ea65175e4_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "Bukit Raya"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_628a30efbb1d339c14d78c7ea65175e4.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_1e31d68cda8c42379c9f6e4cb0946804_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_1e31d68cda8c42379c9f6e4cb0946804 = L.geoJson(null, {
+                onEachFeature: geo_json_1e31d68cda8c42379c9f6e4cb0946804_onEachFeature,
+            
+        });
+
+        function geo_json_1e31d68cda8c42379c9f6e4cb0946804_add (data) {
+            geo_json_1e31d68cda8c42379c9f6e4cb0946804
+                .addData(data);
+        }
+            geo_json_1e31d68cda8c42379c9f6e4cb0946804_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "Kulim"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_1e31d68cda8c42379c9f6e4cb0946804.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_b4d2e6473921884b4f5227127a135a9e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b4d2e6473921884b4f5227127a135a9e = L.geoJson(null, {
+                onEachFeature: geo_json_b4d2e6473921884b4f5227127a135a9e_onEachFeature,
+            
+        });
+
+        function geo_json_b4d2e6473921884b4f5227127a135a9e_add (data) {
+            geo_json_b4d2e6473921884b4f5227127a135a9e
+                .addData(data);
+        }
+            geo_json_b4d2e6473921884b4f5227127a135a9e_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "Lima Puluh"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_b4d2e6473921884b4f5227127a135a9e.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_c9520ca6fee554a18a95bfb72bfc51d1_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c9520ca6fee554a18a95bfb72bfc51d1 = L.geoJson(null, {
+                onEachFeature: geo_json_c9520ca6fee554a18a95bfb72bfc51d1_onEachFeature,
+            
+        });
+
+        function geo_json_c9520ca6fee554a18a95bfb72bfc51d1_add (data) {
+            geo_json_c9520ca6fee554a18a95bfb72bfc51d1
+                .addData(data);
+        }
+            geo_json_c9520ca6fee554a18a95bfb72bfc51d1_add({"features": [{"geometry": {"coordinates": [[[101.41955355233898, 0.5008534281015216], [101.41905207836959, 0.4906429374066903], [101.41844387143226, 0.4639848460508489], [101.41834285655773, 0.4468128597146972], [101.42056518381764, 0.4417622677909918], [101.42309055570382, 0.43832786331989837], [101.42773723997396, 0.43014589340278064], [101.4301615969843, 0.4290347610062639], [101.43197986474337, 0.4267114836543584], [101.43743466801646, 0.42388314506264635], [101.44561687479626, 0.43428738220501373], [101.45280506691796, 0.45205550460947563], [101.4520973592044, 0.46139694962924693], [101.45450356543199, 0.46535998321918726], [101.4542204823469, 0.4779567536827898], [101.45492819006046, 0.4943749815366374], [101.4554943562324, 0.49748877883249065], [101.45436202389038, 0.4993287492720526], [101.45308815000493, 0.50060257465897], [101.45393739996734, 0.503008689335573], [101.45181427682292, 0.5049901942710733], [101.44856956862634, 0.5103363422415157], [101.41955355233898, 0.5008534281015216]]], "type": "Polygon"}, "properties": {"name": "Marpoyan Damai"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_c9520ca6fee554a18a95bfb72bfc51d1.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_5b60f1da830d39545a8705ada62c16b2_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_5b60f1da830d39545a8705ada62c16b2 = L.geoJson(null, {
+                onEachFeature: geo_json_5b60f1da830d39545a8705ada62c16b2_onEachFeature,
+            
+        });
+
+        function geo_json_5b60f1da830d39545a8705ada62c16b2_add (data) {
+            geo_json_5b60f1da830d39545a8705ada62c16b2
+                .addData(data);
+        }
+            geo_json_5b60f1da830d39545a8705ada62c16b2_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "Payung Sekaki"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_5b60f1da830d39545a8705ada62c16b2.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_c6860d4c17171bd00447f4d3267b20fd_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c6860d4c17171bd00447f4d3267b20fd = L.geoJson(null, {
+                onEachFeature: geo_json_c6860d4c17171bd00447f4d3267b20fd_onEachFeature,
+            
+        });
+
+        function geo_json_c6860d4c17171bd00447f4d3267b20fd_add (data) {
+            geo_json_c6860d4c17171bd00447f4d3267b20fd
+                .addData(data);
+        }
+            geo_json_c6860d4c17171bd00447f4d3267b20fd_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "Pekanbaru Kota"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_c6860d4c17171bd00447f4d3267b20fd.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_8ef5eaf2e8a65d7f920d49fcacc3dcc3_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_8ef5eaf2e8a65d7f920d49fcacc3dcc3 = L.geoJson(null, {
+                onEachFeature: geo_json_8ef5eaf2e8a65d7f920d49fcacc3dcc3_onEachFeature,
+            
+        });
+
+        function geo_json_8ef5eaf2e8a65d7f920d49fcacc3dcc3_add (data) {
+            geo_json_8ef5eaf2e8a65d7f920d49fcacc3dcc3
+                .addData(data);
+        }
+            geo_json_8ef5eaf2e8a65d7f920d49fcacc3dcc3_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "Rumbai Barat"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_8ef5eaf2e8a65d7f920d49fcacc3dcc3.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_1e881e8768091b5c9496d9d76639c885_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_1e881e8768091b5c9496d9d76639c885 = L.geoJson(null, {
+                onEachFeature: geo_json_1e881e8768091b5c9496d9d76639c885_onEachFeature,
+            
+        });
+
+        function geo_json_1e881e8768091b5c9496d9d76639c885_add (data) {
+            geo_json_1e881e8768091b5c9496d9d76639c885
+                .addData(data);
+        }
+            geo_json_1e881e8768091b5c9496d9d76639c885_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "Rumbai"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_1e881e8768091b5c9496d9d76639c885.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_ff4a862293535dad5aabbde91d2dd3a0_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ff4a862293535dad5aabbde91d2dd3a0 = L.geoJson(null, {
+                onEachFeature: geo_json_ff4a862293535dad5aabbde91d2dd3a0_onEachFeature,
+            
+        });
+
+        function geo_json_ff4a862293535dad5aabbde91d2dd3a0_add (data) {
+            geo_json_ff4a862293535dad5aabbde91d2dd3a0
+                .addData(data);
+        }
+            geo_json_ff4a862293535dad5aabbde91d2dd3a0_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "Rumbai Timur"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_ff4a862293535dad5aabbde91d2dd3a0.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_eacc0657cf0f9580dbd04f18fe3f3bf7_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_eacc0657cf0f9580dbd04f18fe3f3bf7 = L.geoJson(null, {
+                onEachFeature: geo_json_eacc0657cf0f9580dbd04f18fe3f3bf7_onEachFeature,
+            
+        });
+
+        function geo_json_eacc0657cf0f9580dbd04f18fe3f3bf7_add (data) {
+            geo_json_eacc0657cf0f9580dbd04f18fe3f3bf7
+                .addData(data);
+        }
+            geo_json_eacc0657cf0f9580dbd04f18fe3f3bf7_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "Sail"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_eacc0657cf0f9580dbd04f18fe3f3bf7.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_05f127de90b99ccc315e1dc2bb7d2cd1_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_05f127de90b99ccc315e1dc2bb7d2cd1 = L.geoJson(null, {
+                onEachFeature: geo_json_05f127de90b99ccc315e1dc2bb7d2cd1_onEachFeature,
+            
+        });
+
+        function geo_json_05f127de90b99ccc315e1dc2bb7d2cd1_add (data) {
+            geo_json_05f127de90b99ccc315e1dc2bb7d2cd1
+                .addData(data);
+        }
+            geo_json_05f127de90b99ccc315e1dc2bb7d2cd1_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "Senapelan"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_05f127de90b99ccc315e1dc2bb7d2cd1.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_d040c32657eb531c36cf5c75c59c8914_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d040c32657eb531c36cf5c75c59c8914 = L.geoJson(null, {
+                onEachFeature: geo_json_d040c32657eb531c36cf5c75c59c8914_onEachFeature,
+            
+        });
+
+        function geo_json_d040c32657eb531c36cf5c75c59c8914_add (data) {
+            geo_json_d040c32657eb531c36cf5c75c59c8914
+                .addData(data);
+        }
+            geo_json_d040c32657eb531c36cf5c75c59c8914_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "Sukajadi"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_d040c32657eb531c36cf5c75c59c8914.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_b6203cafefb446b8a7ac8fcacd7265e1_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b6203cafefb446b8a7ac8fcacd7265e1 = L.geoJson(null, {
+                onEachFeature: geo_json_b6203cafefb446b8a7ac8fcacd7265e1_onEachFeature,
+            
+        });
+
+        function geo_json_b6203cafefb446b8a7ac8fcacd7265e1_add (data) {
+            geo_json_b6203cafefb446b8a7ac8fcacd7265e1
+                .addData(data);
+        }
+            geo_json_b6203cafefb446b8a7ac8fcacd7265e1_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "Tuah Madani"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_b6203cafefb446b8a7ac8fcacd7265e1.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_38272bf6eedfc718b988a4634b8b4cd5_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_38272bf6eedfc718b988a4634b8b4cd5 = L.geoJson(null, {
+                onEachFeature: geo_json_38272bf6eedfc718b988a4634b8b4cd5_onEachFeature,
+            
+        });
+
+        function geo_json_38272bf6eedfc718b988a4634b8b4cd5_add (data) {
+            geo_json_38272bf6eedfc718b988a4634b8b4cd5
+                .addData(data);
+        }
+            geo_json_38272bf6eedfc718b988a4634b8b4cd5_add({"features": [{"geometry": {"coordinates": [[[101.450138, 0.537446], [101.459611, 0.537446], [101.459611, 0.547917], [101.450138, 0.547917], [101.450138, 0.537446]]], "type": "Polygon"}, "properties": {"name": "Tenayan Raya"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_38272bf6eedfc718b988a4634b8b4cd5.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+
+        function geo_json_f42ffeeb97ea2758fedf874165658e96_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f42ffeeb97ea2758fedf874165658e96 = L.geoJson(null, {
+                onEachFeature: geo_json_f42ffeeb97ea2758fedf874165658e96_onEachFeature,
+            
+        });
+
+        function geo_json_f42ffeeb97ea2758fedf874165658e96_add (data) {
+            geo_json_f42ffeeb97ea2758fedf874165658e96
+                .addData(data);
+        }
+            geo_json_f42ffeeb97ea2758fedf874165658e96_add({"features": [{"geometry": {"coordinates": [101.455467, 0.543546], "type": "Point"}, "properties": {"address": "Jl. Jenderal Sudirman No.456", "category": "", "district": "Marpoyan Damai", "name": "Kedai Kopi Kulo"}, "type": "Feature"}, {"geometry": {"coordinates": [101.423546, 0.498546], "type": "Point"}, "properties": {"address": "Jl. Hang Tuah No.123", "category": "", "district": "Sail", "name": "Rumah Kopi Nan Tumpah"}, "type": "Feature"}, {"geometry": {"coordinates": [101.436547, 0.512356], "type": "Point"}, "properties": {"address": "Jl. Riau No.789", "category": "", "district": "Sukajadi", "name": "Kopi Janji Jiwa"}, "type": "Feature"}, {"geometry": {"coordinates": [101.465467, 0.554356], "type": "Point"}, "properties": {"address": "Jl. Arifin Ahmad No.101", "category": "", "district": "Sukajadi", "name": "Fore Coffee"}, "type": "Feature"}, {"geometry": {"coordinates": [101.445654, 0.523546], "type": "Point"}, "properties": {"address": "Jl. Soekarno-Hatta No.234", "category": "", "district": "Payung Sekaki", "name": "Kopi Kenangan"}, "type": "Feature"}, {"geometry": {"coordinates": [101.456547, 0.534546], "type": "Point"}, "properties": {"address": "Jl. HR Soebrantas No.567", "category": "", "district": "Tampan", "name": "Starbucks"}, "type": "Feature"}, {"geometry": {"coordinates": [101.425467, 0.501236], "type": "Point"}, "properties": {"address": "Jl. Paus No.890", "category": "", "district": "Marpoyan Damai", "name": "Excelso"}, "type": "Feature"}, {"geometry": {"coordinates": [101.437546, 0.515467], "type": "Point"}, "properties": {"address": "Jl. Harapan Raya No.345", "category": "", "district": "Tenayan Raya", "name": "Coffee Toffee"}, "type": "Feature"}, {"geometry": {"coordinates": [101.466547, 0.555467], "type": "Point"}, "properties": {"address": "Jl. Tuanku Tambusai No.678", "category": "", "district": "Tenayan Raya", "name": "Haus!"}, "type": "Feature"}, {"geometry": {"coordinates": [101.446547, 0.525467], "type": "Point"}, "properties": {"address": "Jl. Bukit Barisan No.901", "category": "", "district": "Lima Puluh", "name": "Kopi Lain Hati"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_f42ffeeb97ea2758fedf874165658e96.addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+        
+    
+            var layer_control_dca929f10cf40cc4233e771027583313_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_68eb3fb246eabdca1523e9a98698bf9a,
+                },
+                overlays :  {
+                    "Binawidya" : geo_json_0d9a833d92d21d39487c6840bd3c6826,
+                    "Bukit Raya" : geo_json_628a30efbb1d339c14d78c7ea65175e4,
+                    "Kulim" : geo_json_1e31d68cda8c42379c9f6e4cb0946804,
+                    "Lima Puluh" : geo_json_b4d2e6473921884b4f5227127a135a9e,
+                    "Marpoyan Damai" : geo_json_c9520ca6fee554a18a95bfb72bfc51d1,
+                    "Payung Sekaki" : geo_json_5b60f1da830d39545a8705ada62c16b2,
+                    "Pekanbaru Kota" : geo_json_c6860d4c17171bd00447f4d3267b20fd,
+                    "Rumbai Barat" : geo_json_8ef5eaf2e8a65d7f920d49fcacc3dcc3,
+                    "Rumbai" : geo_json_1e881e8768091b5c9496d9d76639c885,
+                    "Rumbai Timur" : geo_json_ff4a862293535dad5aabbde91d2dd3a0,
+                    "Sail" : geo_json_eacc0657cf0f9580dbd04f18fe3f3bf7,
+                    "Senapelan" : geo_json_05f127de90b99ccc315e1dc2bb7d2cd1,
+                    "Sukajadi" : geo_json_d040c32657eb531c36cf5c75c59c8914,
+                    "Tuah Madani" : geo_json_b6203cafefb446b8a7ac8fcacd7265e1,
+                    "Tenayan Raya" : geo_json_38272bf6eedfc718b988a4634b8b4cd5,
+                    "Coffee Shops" : geo_json_f42ffeeb97ea2758fedf874165658e96,
+                },
+            };
+            let layer_control_dca929f10cf40cc4233e771027583313 = L.control.layers(
+                layer_control_dca929f10cf40cc4233e771027583313_layers.base_layers,
+                layer_control_dca929f10cf40cc4233e771027583313_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_5b675da7fe3d3d684531ac25f623c0dc);
+
+        
+</script>
 </html>
