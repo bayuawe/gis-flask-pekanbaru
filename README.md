@@ -1,11 +1,11 @@
-#Geographic Information System (GIS) with Flask - Pekanbaru
+# Geographic Information System (GIS) with Flask - Pekanbaru
 
 Welcome to the Geographic Information System (GIS) project built with Flask for the city of Pekanbaru. This project aims to provide a web-based application for visualizing and analyzing geographic data related to Pekanbaru using Flask, a lightweight Python web framework.
 
 Getting Started
 Follow these steps to set up and run the project locally:
 
-##Clone the Repository:
+## Clone the Repository:
 ```bash
 git clone https://github.com/your-username/gis-flask-pekanbaru.git
 ```
@@ -49,10 +49,10 @@ python app.py
 Open your browser and navigate to `http://localhost:5000` to view the GIS application.
 
 ## Project Structure
-`app.py`: Main Flask application file.
-`templates/`: Contains HTML templates.
-`static/`: Holds static files such as stylesheets and images.
-`venv/`: Virtual environment folder.
+- `app.py` : Main Flask application file.
+- `templates/` : Contains HTML templates.
+- `static/` : Holds static files such as stylesheets and images.
+- `venv/` : Virtual environment folder.
 
 ## Contributing
 Feel free to contribute to the project by creating issues, suggesting improvements, or submitting pull requests. Your contributions are highly appreciated.
