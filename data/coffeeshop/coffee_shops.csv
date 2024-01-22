@@ -1,21 +1,22 @@
-name,address,latitude,longitude,district
-One Refinery Coffee Shop,Jl. Delima No.6 Delima 28291,0.4772144,101.4047703, Tampan
-Erber Coffee Nodal,Gg. Keluarga Tengkerang Bar  28289,0.4818993,101.4186021, Marpoyan Damai
-Teras Kopi Sumatera,Jl. Sumatera No.29 Simpang Empat 28131,0.512147,101.4476987, Pekanbaru Kota
-Leng Coffee,Jl. Arifin Ahmad No.8 Sidomulyo Timur  28125,0.4808459,101.4342264, Marpoyan Damai
-DI'COFFEE,Jl. Bindanak No.6f Tengkerang Utara 28126,0.5047264,101.4605364, Bukit Raya
-Lexo Coffee & Roastery,Jl. Belibis No.4 Kp. Melayu 28124,0.5144302,101.434002, Sukajadi
-Coffee Toffee Pekanbaru,Jl. Sisingamangaraja Rintis 28156,0.5285297,101.4542792, Lima Puluh
-Major House Pekanbaru,Jl. Elang No.6 Kp. Melayu 28122,0.50927,101.4346275, Sukajadi
-Sehasta Specialty Coffee,Jl. Arifin Ahmad No.10 Tengkerang Tengah  28125,0.480654,101.4396631, Marpoyan Damai
-SWA Coffee Studio,Jl. Tengku Bey II Gang Karisma Simpang Tiga 26264,0.4591837,101.4576363, Bukit Raya
-COMA Coffee,Jl. Diponegoro Cinta Raja Kec. Sail 28127,0.5080084,101.4498474, Sail
-ORION COFFEE & ROASTERY,Jl. St. Syarif No.125 Kota Tinggi 28155,0.5310049,101.4513407, Pekanbaru Kota
-Cerita Kopi Pekanbaru,Jl. Garuda No.23T Labuh Baru Timur 28292,0.5147629,101.4253563, Payung Sekaki
-Mocarabica Coffee Shop,Jl. Melur No.5 Sidomulyo Ba 28294,0.4632697,101.4084869, Tampan
-Aksén Coffee,Jl. Baru Jl. Arifin Ahmad Sidomulyo Tim  28125,0.478567,101.4399628, Marpoyan Damai
-Roots Coffee Pekanbaru,Jl. Jend. Ahmad Yani No.73 Tanah Datar 28156,0.5210436,101.4407971, Pekanbaru Kota
-Nuansa Coffee & Eatery,Jl. Elang No.2 Kp. Melayu 28122,0.509375,101.4350148, Sukajadi
-Er Coffee,Jl. Arifin Ahmad No.45 Sidomulyo Tim  28289,0.4769087,101.4273155, Marpoyan Damai
+name,address,latitude,longitude,district,image_url
+Crack House, Perum Villa Fajar Indah Blok B No. 6 Tengkerang Selatan 28125,0.4856573,101.4534542,Bukit Raya,"https://lh3.googleusercontent.com/p/AF1QipNFVYe3JrBcRNzLxOSmbx-h6z0yvVePuV6ILRmx=s0"
+One Refinery Coffee Shop,Jl. Delima No.6 Delima 28291,0.4772144,101.4047703, Tampan,"https://lh3.googleusercontent.com/p/AF1QipMYXnjnKvFOVHujjln5MCJWqEkbWVuRvQEW9OHZ=s0"
+Erber Coffee Nodal,Gg. Keluarga Tengkerang Bar28289,0.4818993,101.4186021,Marpoyan Damai
+Teras Kopi Sumatera,Jl. Sumatera No.29 Simpang Empat 28131,0.512147,101.4476987,Pekanbaru Kota
+Leng Coffee,Jl. Arifin Ahmad No.8 Sidomulyo Timur  28125,0.4808459,101.4342264,Marpoyan Damai
+DI'COFFEE,Jl. Bindanak No.6f Tengkerang Utara 28126,0.5047264,101.4605364,Bukit Raya
+Lexo Coffee & Roastery,Jl. Belibis No.4 Kp. Melayu 28124,0.5144302,101.434002,Sukajadi
+Coffee Toffee Pekanbaru,Jl. Sisingamangaraja Rintis 28156,0.5285297,101.4542792,Lima Puluh
+Major House Pekanbaru,Jl. Elang No.6 Kp. Melayu 28122,0.50927,101.4346275,Sukajadi
+Sehasta Specialty Coffee,Jl. Arifin Ahmad No.10 Tengkerang Tengah  28125,0.480654,101.4396631,Marpoyan Damai
+SWA Coffee Studio,Jl. Tengku Bey II Gang Karisma Simpang Tiga 26264,0.4591837,101.4576363,Bukit Raya
+COMA Coffee,Jl. Diponegoro Cinta Raja Kec. Sail 28127,0.5080084,101.4498474,Sail
+ORION COFFEE & ROASTERY,Jl. St. Syarif No.125 Kota Tinggi 28155,0.5310049,101.4513407,Pekanbaru Kota
+Cerita Kopi Pekanbaru,Jl. Garuda No.23T Labuh Baru Timur 28292,0.5147629,101.4253563,Payung Sekaki
+Mocarabica Coffee Shop,Jl. Melur No.5 Sidomulyo Ba 28294,0.4632697,101.4084869,Tampan
+Aksén Coffee,Jl. Baru Jl. Arifin Ahmad Sidomulyo Tim  28125,0.478567,101.4399628,Marpoyan Damai
+Roots Coffee Pekanbaru,Jl. Jend. Ahmad Yani No.73 Tanah Datar 28156,0.5210436,101.4407971,Pekanbaru Kota
+Nuansa Coffee & Eatery,Jl. Elang No.2 Kp. Melayu 28122,0.509375,101.4350148,Sukajadi
+Er Coffee,Jl. Arifin Ahmad No.45 Sidomulyo Tim  28289,0.4769087,101.4273155,Marpoyan Damai
 
 

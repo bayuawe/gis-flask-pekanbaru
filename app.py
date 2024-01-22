@@ -83,9 +83,9 @@ def map():
         location = [row['latitude'], row['longitude']]
 
         # Logic untuk mendapatkan URL gambar berdasarkan nama kedai dan district
-        image_url = f"images/{row['name'].replace(' ', '_')}_{row['district'].replace(' ', '_')}.jpg"
+        image_url = row['image_url']
         
-        popup_content = f'<strong>{row["name"]}</strong><br>{row["address"]}<br><img src="{image_url}" width="100" height="100">'
+        popup_content = f'<strong>{row["name"]}</strong><br>{row["address"]}<br>{row["district"]}<br><img src="{image_url}" width="100" height="100">'
         
         marker = folium.Marker(
             location=location,
