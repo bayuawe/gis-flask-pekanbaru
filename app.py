@@ -4,6 +4,8 @@ import folium
 import pandas as pd
 import hashlib 
 
+
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -11,7 +13,7 @@ def map():
     # Load GeoJSON data for city
     kota_pekanbaru_geojson = 'data/pekanbaru/kota_pekanbaru.geojson'
     
-    # Load GeoJSON data for city
+    # Load GeoJSON data for district
     bukit_raya_geojson = 'data/pekanbaru/bukit_raya.geojson'
     limapuluh_geojson = 'data/pekanbaru/limapuluh.geojson'
     marpoyan_damai_geojson = 'data/pekanbaru/marpoyan_damai.geojson'
@@ -29,51 +31,26 @@ def map():
     coffee_shop_csv = 'data/coffeeshop/coffee_shops.csv'
     coffee_shop_df = pd.read_csv(coffee_shop_csv)
 
-    # # Convert CSV data to GeoJSON
-    # coffee_shop_geojson = {
-    #     "type": "FeatureCollection",
-    #     "features": []
-    # }
-
-    # # Add coffee shop data to GeoJSON
-    # for index, row in coffee_shop_df.iterrows():
-    #     feature = {
-    #         "type": "Feature",
-    #         "geometry": {
-    #             "type": "Point",
-    #             "coordinates": [row['longitude'], row['latitude']]
-    #         },
-    #         "properties": {
-    #             "name": row['name'],
-    #             "address": row['address'],
-    #             "category": '',
-    #             "district": row['district']
-    #         }
-    #     }
-    #     coffee_shop_geojson['features'].append(feature)
-
     # Create a Folium Map centered at Pekanbaru
     m = folium.Map(location=[0.5394, 101.4431], zoom_start=13)
 
     # Add GeoJSON layer for city
-    folium.GeoJson(kota_pekanbaru_geojson, name='Kota Pekanbaru').add_to(m)
+    folium.GeoJson(kota_pekanbaru_geojson, name='Kota Pekanbaru', show=False).add_to(m)
+
     
     # Add GeoJSON layer for districts
-    folium.GeoJson(bukit_raya_geojson, name='Kecamatan Bukit Raya').add_to(m)
-    folium.GeoJson(limapuluh_geojson, name='Kecamatan Limapuluh').add_to(m)
-    folium.GeoJson(marpoyan_damai_geojson, name='Kecamatan Marpoyan Damai').add_to(m)
-    folium.GeoJson(payung_sekaki_geojson, name='Kecamatan Payung Sekaki').add_to(m)
-    folium.GeoJson(pekanbaru_kota_geojson, name='Kecamatan Pekanbaru Kota').add_to(m)
-    folium.GeoJson(rumbai_pesisir_geojson, name='Kecamatan Rumbai Pesisir').add_to(m)
-    folium.GeoJson(rumbai_geojson, name='Kecamatan Rumbai').add_to(m)
-    folium.GeoJson(sail_geojson, name='Kecamatan Sail').add_to(m)
-    folium.GeoJson(senapelan_geojson, name='Kecamatan Senapelan').add_to(m)
-    folium.GeoJson(sukajadi_geojson, name='Kecamatan Sukajadi').add_to(m)
-    folium.GeoJson(tampan_geojson, name='Kecamatan Tampan').add_to(m)
-    folium.GeoJson(tenayan_raya_geojson, name='Kecamatan Tenayan Raya').add_to(m)
-
-    # Add GeoJSON layer for coffee shops
-    # folium.GeoJson(coffee_shop_geojson, name='Coffee Shops').add_to(m)
+    folium.GeoJson(bukit_raya_geojson, name='Kecamatan Bukit Raya', show=False).add_to(m)
+    folium.GeoJson(limapuluh_geojson, name='Kecamatan Limapuluh', show=False).add_to(m)
+    folium.GeoJson(marpoyan_damai_geojson, name='Kecamatan Marpoyan Damai', show=False).add_to(m)
+    folium.GeoJson(payung_sekaki_geojson, name='Kecamatan Payung Sekaki', show=False).add_to(m)
+    folium.GeoJson(pekanbaru_kota_geojson, name='Kecamatan Pekanbaru Kota', show=False).add_to(m)
+    folium.GeoJson(rumbai_pesisir_geojson, name='Kecamatan Rumbai Pesisir', show=False).add_to(m)
+    folium.GeoJson(rumbai_geojson, name='Kecamatan Rumbai', show=False).add_to(m)
+    folium.GeoJson(sail_geojson, name='Kecamatan Sail', show=False).add_to(m)
+    folium.GeoJson(senapelan_geojson, name='Kecamatan Senapelan', show=False).add_to(m)
+    folium.GeoJson(sukajadi_geojson, name='Kecamatan Sukajadi', show=False).add_to(m)
+    folium.GeoJson(tampan_geojson, name='Kecamatan Tampan', show=False).add_to(m)
+    folium.GeoJson(tenayan_raya_geojson, name='Kecamatan Tenayan Raya', show=False).add_to(m)
     
     # Create a FeatureGroup for the Coffee Shop layer
     coffee_shop_layer = folium.FeatureGroup(name='Coffee Shop')
